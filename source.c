@@ -1,5 +1,5 @@
 #include <stdio.h>
 
 int main(){
-    system("colorcpl.exe");
+    system("notepad.exe"); //**Toto otevře notepad**//
 }
