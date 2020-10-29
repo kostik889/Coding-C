@@ -7,7 +7,7 @@ int main(){
     printf("Zadejte Ÿ¡slo: ");
     scanf("%d", &cislo);
 
-    printf("Toto Ÿ¡slo jste zadali: %d\n");
+    printf("Toto Ÿ¡slo jste zadali: %d\n", cislo);
 
     return 0;
 }
