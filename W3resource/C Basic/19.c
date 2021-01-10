@@ -11,6 +11,12 @@ int main(){
     int arr_nums[4];
     char arr_chars[4] = {'p','q','r','s'};
     char arr_position[4][10] = {"first","second", "third", "fourth"};
+    struct data_base
+    {
+        int arr_nums[4];
+        char arr_chars[4];
+    };
+    
 
     for(int i=0; i<4;i++){
         printf("Input the %s integer: ", arr_position[i]);
@@ -19,10 +25,8 @@ int main(){
             return 1;
         }
     }
-    printf("%c", arr_chars[0]);
-    //int arr_chars[0] = arr_nums[0];
-
-
+    
+    
     /*int p;
     if(scanf("%d", &p) != 1){
         format_error();
