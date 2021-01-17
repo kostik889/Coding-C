@@ -15,7 +15,7 @@ int introduction(void){
 }
 void getting_input (void){
     printf("Input the password: ");
-    fgets(user_input, 5, stdin);    
+    fgets(user_input, 5, stdin);
 }
 bool are_equal (void){
     for(int i =0; i<strlen(password); i++){
