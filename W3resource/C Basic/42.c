@@ -15,7 +15,7 @@ int format_error (void){
 }
 //FUNCTIONS
 int introduction (void){
-    return printf("Write a C program to print 3 numbers in a line, starting from 1 and print n lines. Accept number of lines (n, integer) from the user\n");
+    return printf("Write a C program to print a number, it?s square and cube in a line, starting from 1 and print n lines. Accept number of lines (n, integer) from the user.\n");
 }
 bool getting_input(void){
     if(scanf("%d", &n) !=1){
