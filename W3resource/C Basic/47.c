@@ -4,12 +4,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-
 /* global variables */
 int number;
 bool converted=false;
 /*-------------------------------*/
-
 
 //ERROR FUNCTIONS
 int format_error(void){
