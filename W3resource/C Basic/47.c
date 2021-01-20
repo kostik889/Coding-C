@@ -56,7 +56,7 @@ int main(void){
         return 2;
     }
     else{
-        printf("All the divisor of %d are:\n", number);
+        printf("All the natural divisors of %d are:\n", number);
         finding_divisors();
         return 0;
     }
