@@ -7,6 +7,7 @@
 
 /* global variables */
 int number;
+bool converted=false;
 /*-------------------------------*/
 
 
@@ -29,14 +30,19 @@ bool getting_input(void){
 bool below_zero (int num){
     return num < 0 ? true : false;
 }
-int absolute_value(int num){
-    return number = num*-1;
+void absolute_value(void){
+    number *= -1;
+    converted = true;
 }
-int finding_divisors(int num){
-    for(int i=1; i<=num; i++){
-        if(num%i == 0)
+int finding_divisors(void){
+    if(below_zero(number) == true)
+        absolute_value();
+    for(int i=1; i<=number; i++){
+        if(number%i == 0)
             printf("%d\n", i);
     }
+    if(converted == true)
+        absolute_value();
 }
 //MAIN FUNCTION
 int main(void){
@@ -46,14 +52,12 @@ int main(void){
         printf("\nDid not get a nubmer. Program now ends.");
         return 1;
     }else if(number == 0){
-        printf("There are of this number");
+        printf("There are no divisors of this number");
         return 2;
     }
     else{
-        if(below_zero(number) == true)
-            absolute_value(number);
         printf("All the divisor of %d are:\n", number);
-        finding_divisors(number);
+        finding_divisors();
         return 0;
     }
 }
